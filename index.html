@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        COMP 4711 Lab 5
+    </title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
+</head>
+<body>
+    
+    <div class="dirform">
+        <h2>
+            Artist Directroy
+        </h2>
+        <div id = "Dir">
+            <div id="searchForm">
+                <input id="searchIn" type="text">       
+            </div>
+            
+            <div id = 'buttons'>
+                <button onclick="search()" id= "search">Search</button>
+                <button onclick="showDiv()" id= "addP">Add</button>
+            </div>
+        </div>
+    </div>
+
+    <div id = "TheAdder">
+        <form id = "myForm">
+            <input type="text" name="Name" placeholder="Artist Name" maxlength="40" required>       
+
+            <input type="text" name="About" placeholder="About Artist" maxlength="40" required>       
+
+            <input type="text" name="URL" placeholder="Image url" required> 
+           
+        </form>
+        <button onclick="addArtist()" id= "mainAdd">Add</button>
+        
+
+    </div>
+
+    <div class="dircont">
+    
+            <ul id = "list">
+                
+            </ul>
+    </div>
+    <script type="text/javascript" src="/js/dir.js"></script>
+</body>
+</html>
+
