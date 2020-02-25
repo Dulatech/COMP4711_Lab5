@@ -4,7 +4,7 @@ var showOn = false;
 fetchArt();
 
 function fetchArt(){
-fetch('https://comp4711-lab5-node.herokuapp.com/loadartists', {
+fetch('/loadartists', {
     method: 'GET',
     mode: 'cors',
     headers: {
