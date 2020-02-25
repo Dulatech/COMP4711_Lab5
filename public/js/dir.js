@@ -78,7 +78,7 @@ function addArtist() {
     About = x.elements[1].value;
     URL = x.elements[2].value;
     if(URL.length == 0){
-        URL = "https://via.placeholder.com/150";
+        URL = "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png";
     } 
 
     if(Name.length == 0){
@@ -143,7 +143,7 @@ function clearList(){
 }
 
 function noValidImg(image){
-    image.src = "https://via.placeholder.com/150";
+    image.src = "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png";
 }
 
 function loadArtists(json){
